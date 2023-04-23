@@ -1,0 +1,416 @@
+from tkinter import *
+from tkinter import messagebox
+
+root=Tk()
+root.title("Wordle")
+
+count = 0
+clicked=0
+word1 = "L"
+word2 = "I"
+word3 = "G"
+word4 = "H"
+word5 = "T"
+
+def a_click(ab):
+    global count, clicked
+    global word1, word2, word3, word4, word5
+    if a1["text"] == "" and count == 0 and clicked == 0 :
+        a1["text"] = ab["text"]
+        clicked += 1
+    elif a2["text"] == "" and count == 0 and clicked == 1 :
+        a2["text"] = ab["text"]
+        clicked += 1
+    elif a3["text"] == "" and count == 0 and clicked == 2 :
+        a3["text"] = ab["text"]
+        clicked += 1
+    elif a4["text"] == "" and count == 0 and clicked == 3 :
+        a4["text"] = ab["text"]
+        clicked += 1
+    elif a5["text"] == "" and count == 0 and clicked == 4 :
+        a5["text"] = ab["text"]
+        clicked += 1
+        count += 1
+        if a1["text"] == word1 and a2["text"] == word2 and a3["text"] == word3 and a4["text"] == word4 and a5["text"] == word5 :
+            a1.config(bg="lightgreen")
+            a2.config(bg="lightgreen")
+            a3.config(bg="lightgreen")
+            a4.config(bg="lightgreen")
+            a5.config(bg="lightgreen")
+            messagebox.showinfo("win", "you guessed!!")
+        if a1["text"] == word1 :
+            a1.config(bg="lightgreen")
+        if a2["text"] == word2 :
+            a2.config(bg="lightgreen")
+        if a3["text"] == word3 :
+            a3.config(bg="lightgreen")
+        if a4["text"] == word4 :
+            a4.config(bg="lightgreen")
+        if a5["text"] == word5 :
+            a5.config(bg="lightgreen")
+        if a1["text"] == word2 or a1["text"] == word3 or a1["text"] == word4 or a1["text"] == word5 :
+            a1.config(bg="yellow")
+        if a2["text"] == word1 or a2["text"] == word3 or a2["text"] == word4 or a2["text"] == word5 :
+            a2.config(bg="yellow")
+        if a3["text"] == word1 or a3["text"] == word2 or a3["text"] == word4 or a3["text"] == word5 :
+            a3.config(bg="yellow")
+        if a4["text"] == word1 or a4["text"] == word2 or a4["text"] == word3 or a4["text"] == word5 :
+            a4.config(bg="yellow")
+        if a5["text"] == word1 or a5["text"] == word2 or a5["text"] == word3 or a5["text"] == word4 :
+            a5.config(bg="yellow")
+        
+
+    elif b1["text"] == "" and count == 1 and clicked == 5 :
+        b1["text"] = ab["text"]
+        clicked += 1
+    elif b2["text"] == "" and count == 1 and clicked == 6 :
+        b2["text"] = ab["text"]
+        clicked += 1
+    elif b3["text"] == "" and count == 1 and clicked == 7 :
+        b3["text"] = ab["text"]
+        clicked += 1
+    elif b4["text"] == "" and count == 1 and clicked == 8 :
+        b4["text"] = ab["text"]
+        clicked += 1
+    elif b5["text"] == "" and count == 1 and clicked == 9 :
+        b5["text"] = ab["text"]
+        clicked += 1
+        count += 1
+        if b1["text"] == word1 and b2["text"] == word2 and b3["text"] == word3 and b4["text"] == word4 and b5["text"] == word5 :
+            b1.config(bg="lightgreen")
+            b2.config(bg="lightgreen")
+            b3.config(bg="lightgreen")
+            b4.config(bg="lightgreen")
+            b5.config(bg="lightgreen")
+            messagebox.showinfo("win", "you guessed!!")
+        if b1["text"] == word1 :
+            b1.config(bg="lightgreen")
+        if b2["text"] == word2 :
+            b2.config(bg="lightgreen")
+        if b3["text"] == word3 :
+            b3.config(bg="lightgreen")
+        if b4["text"] == word4 :
+            b4.config(bg="lightgreen")
+        if b5["text"] == word5 :
+            b5.config(bg="lightgreen")
+        if b1["text"] == word2 or b1["text"] == word3 or b1["text"] == word4 or b1["text"] == word5 :
+            b1.config(bg="yellow")
+        if b2["text"] == word1 or b2["text"] == word3 or b2["text"] == word4 or b2["text"] == word5 :
+            b2.config(bg="yellow")
+        if b3["text"] == word1 or b3["text"] == word2 or b3["text"] == word4 or b3["text"] == word5 :
+            b3.config(bg="yellow")
+        if b4["text"] == word1 or b4["text"] == word2 or b4["text"] == word3 or b4["text"] == word5 :
+            b4.config(bg="yellow")
+        if b5["text"] == word1 or b5["text"] == word2 or b5["text"] == word3 or b5["text"] == word4 :
+            b5.config(bg="yellow")
+
+    elif c1["text"] == "" and count == 2 and clicked == 10 :
+        c1["text"] = ab["text"]
+        clicked += 1
+    elif c2["text"] == "" and count == 2 and clicked == 11 :
+        c2["text"] = ab["text"]
+        clicked += 1
+    elif c3["text"] == "" and count == 2 and clicked == 12 :
+        c3["text"] = ab["text"]
+        clicked += 1
+    elif c4["text"] == "" and count == 2 and clicked == 13 :
+        c4["text"] = ab["text"]
+        clicked += 1
+    elif c5["text"] == "" and count == 2 and clicked == 14 :
+        c5["text"] = ab["text"]
+        clicked += 1
+        count += 1
+        if c1["text"] == word1 and c2["text"] == word2 and c3["text"] == word3 and c4["text"] == word4 and c5["text"] == word5 :
+            c1.config(bg="lightgreen")
+            c2.config(bg="lightgreen")
+            c3.config(bg="lightgreen")
+            c4.config(bg="lightgreen")
+            c5.config(bg="lightgreen")
+            messagebox.showinfo("win", "you guessed!!")
+        if c1["text"] == word1 :
+            c1.config(bg="lightgreen")
+        if c2["text"] == word2 :
+            c2.config(bg="lightgreen")
+        if c3["text"] == word3 :
+            c3.config(bg="lightgreen")
+        if c4["text"] == word4 :
+            c4.config(bg="lightgreen")
+        if c5["text"] == word5 :
+            c5.config(bg="lightgreen")
+        if c1["text"] == word2 or c1["text"] == word3 or c1["text"] == word4 or c1["text"] == word5 :
+            c1.config(bg="yellow")
+        if c2["text"] == word1 or c2["text"] == word3 or c2["text"] == word4 or c2["text"] == word5 :
+            c2.config(bg="yellow")
+        if c3["text"] == word1 or c3["text"] == word2 or c3["text"] == word4 or c3["text"] == word5 :
+            c3.config(bg="yellow")
+        if c4["text"] == word1 or c4["text"] == word2 or c4["text"] == word3 or c4["text"] == word5 :
+            c4.config(bg="yellow")
+        if c5["text"] == word1 or c5["text"] == word2 or c5["text"] == word3 or c5["text"] == word4 :
+            c5.config(bg="yellow")
+
+    elif d1["text"] == "" and count == 3 and clicked == 15 :
+        d1["text"] = ab["text"]
+        clicked += 1
+    elif d2["text"] == "" and count == 3 and clicked == 16 :
+        d2["text"] = ab["text"]
+        clicked += 1
+    elif d3["text"] == "" and count == 3 and clicked == 17 :
+        d3["text"] = ab["text"]
+        clicked += 1
+    elif d4["text"] == "" and count == 3 and clicked == 18 :
+        d4["text"] = ab["text"]
+        clicked += 1
+    elif d5["text"] == "" and count == 3 and clicked == 19 :
+        d5["text"] = ab["text"]
+        clicked += 1
+        count += 1
+        if d1["text"] == word1 and d2["text"] == word2 and d3["text"] == word3 and d4["text"] == word4 and d5["text"] == word5 :
+            d1.config(bg="lightgreen")
+            d2.config(bg="lightgreen")
+            d3.config(bg="lightgreen")
+            d4.config(bg="lightgreen")
+            d5.config(bg="lightgreen")
+            messagebox.showinfo("win", "you guessed!!")
+        if d1["text"] == word1 :
+            d1.config(bg="lightgreen")
+        if d2["text"] == word2 :
+            d2.config(bg="lightgreen")
+        if d3["text"] == word3 :
+            d3.config(bg="lightgreen")
+        if d4["text"] == word4 :
+            d4.config(bg="text")
+        if d5["text"] == word5 :
+            d5.config(bg="lightgreen")
+        if d1["text"] == word2 or d1["text"] == word3 or d1["text"] == word4 or d1["text"] == word5 :
+            d1.config(bg="yellow")
+        if d2["text"] == word1 or d2["text"] == word3 or d2["text"] == word4 or d2["text"] == word5 :
+            d2.config(bg="yellow")
+        if d3["text"] == word1 or d3["text"] == word2 or d3["text"] == word4 or d3["text"] == word5 :
+            d3.config(bg="yellow")
+        if d4["text"] == word1 or d4["text"] == word2 or d4["text"] == word3 or d4["text"] == word5 :
+            d4.config(bg="yellow")
+        if d5["text"] == word1 or d5["text"] == word2 or d5["text"] == word3 or d5["text"] == word4 :
+            d5.config(bg="yellow")
+
+    elif e1["text"] == "" and count == 4 and clicked == 20 :
+        e1["text"] = ab["text"]
+        clicked += 1
+    elif e2["text"] == "" and count == 4 and clicked == 21 :
+        e2["text"] = ab["text"]
+        clicked += 1
+    elif e3["text"] == "" and count == 4 and clicked == 22 :
+        e3["text"] = ab["text"]
+        clicked += 1
+    elif e4["text"] == "" and count == 4 and clicked == 23 :
+        e4["text"] = ab["text"]
+        clicked += 1
+    elif e5["text"] == "" and count == 4 and clicked == 24 :
+        e5["text"] = ab["text"]
+        clicked += 1
+        count += 1
+        if e1["text"] == word1 and e2["text"] == word2 and e3["text"] == word3 and e4["text"] == word4 and e5["text"] == word5 :
+            e1.config(bg="lightgreen")
+            e2.config(bg="lightgreen")
+            e3.config(bg="lightgreen")
+            e4.config(bg="lightgreen")
+            e5.config(bg="lightgreen")
+            messagebox.showinfo("win", "you guessed!!")
+        if e1["text"] == word1 :
+            e1.config(bg="lightgreen")
+        if e2["text"] == word2 :
+            e2.config(bg="lightgreen")
+        if e3["text"] == word3 :
+            e3.config(bg="lightgreen")
+        if e4["text"] == word4 :
+            e4.config(bg="text")
+        if e5["text"] == word5 :
+            e5.config(bg="lightgreen")
+        if e1["text"] == word2 or e1["text"] == word3 or e1["text"] == word4 or e1["text"] == word5 :
+            e1.config(bg="yellow")
+        if e2["text"] == word1 or e2["text"] == word3 or e2["text"] == word4 or e2["text"] == word5 :
+            e2.config(bg="yellow")
+        if e3["text"] == word1 or e3["text"] == word2 or e3["text"] == word4 or e3["text"] == word5 :
+            e3.config(bg="yellow")
+        if e4["text"] == word1 or e4["text"] == word2 or e4["text"] == word3 or e4["text"] == word5 :
+            e4.config(bg="yellow")
+        if e5["text"] == word1 or e5["text"] == word2 or e5["text"] == word3 or e5["text"] == word4 :
+            e5.config(bg="yellow")
+
+    elif f1["text"] == "" and count == 5 and clicked == 25 :
+        f1["text"] = ab["text"]
+        clicked += 1
+    elif f2["text"] == "" and count == 5 and clicked == 26 :
+        f2["text"] = ab["text"]
+        clicked += 1
+    elif f3["text"] == "" and count == 5 and clicked == 27 :
+        f3["text"] = ab["text"]
+        clicked += 1
+    elif f4["text"] == "" and count == 5 and clicked == 28 :
+        f4["text"] = ab["text"]
+        clicked += 1
+    else :
+        f5["text"] = ab["text"]
+        clicked += 1
+        count += 1
+        if f1["text"] == word1 and f2["text"] == word2 and f3["text"] == word3 and f4["text"] == word4 and f5["text"] == word5 :
+            f1.config(bg="lightgreen")
+            f2.config(bg="lightgreen")
+            f3.config(bg="lightgreen")
+            f4.config(bg="lightgreen")
+            f5.config(bg="lightgreen")
+            messagebox.showinfo("win", "you guessed!!")
+        if f1["text"] == word1 :
+            f1.config(bg="lightgreen")
+        if f2["text"] == word2 :
+            f2.config(bg="lightgreen")
+        if f3["text"] == word3 :
+            f3.config(bg="lightgreen")
+        if f4["text"] == word4 :
+            f4.config(bg="lightgreen")
+        if f5["text"] == word5 :
+            f5.config(bg="lightgreen")
+        if f1["text"] == word2 or f1["text"] == word3 or f1["text"] == word4 or f1["text"] == word5 :
+            f1.config(bg="yellow")
+        if f2["text"] == word1 or f2["text"] == word3 or f2["text"] == word4 or f2["text"] == word5 :
+            f2.config(bg="yellow")
+        if f3["text"] == word1 or f3["text"] == word2 or f3["text"] == word4 or f3["text"] == word5 :
+            f3.config(bg="yellow")
+        if f4["text"] == word1 or f4["text"] == word2 or f4["text"] == word3 or f4["text"] == word5 :
+            f4.config(bg="yellow")
+        if f5["text"] == word1 or f5["text"] == word2 or f5["text"] == word3 or f5["text"] == word4 :
+            f5.config(bg="yellow")
+        else:
+            messagebox.showinfo("lose", "you didn't guessed!!")
+
+
+
+a1=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+a2=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+a3=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+a4=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+a5=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+
+b1=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+b2=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+b3=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+b4=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+b5=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+
+c1=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+c2=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+c3=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+c4=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+c5=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+
+d1=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+d2=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+d3=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+d4=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+d5=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+
+e1=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+e2=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+e3=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+e4=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+e5=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+
+f1=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+f2=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+f3=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+f4=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+f5=Button(root, text="", font=("helvtica", 20), height=2, width=5, bg="SystemButtonFace")
+
+
+a1.grid(row=0, column=0)
+a2.grid(row=0, column=1)
+a3.grid(row=0, column=2)
+a4.grid(row=0, column=3)
+a5.grid(row=0, column=4)
+
+b1.grid(row=1, column=0)
+b2.grid(row=1, column=1)
+b3.grid(row=1, column=2)
+b4.grid(row=1, column=3)
+b5.grid(row=1, column=4)
+
+c1.grid(row=2, column=0)
+c2.grid(row=2, column=1)
+c3.grid(row=2, column=2)
+c4.grid(row=2, column=3)
+c5.grid(row=2, column=4)
+
+d1.grid(row=3, column=0)
+d2.grid(row=3, column=1)
+d3.grid(row=3, column=2)
+d4.grid(row=3, column=3)
+d5.grid(row=3, column=4)
+
+e1.grid(row=4, column=0)
+e2.grid(row=4, column=1)
+e3.grid(row=4, column=2)
+e4.grid(row=4, column=3)
+e5.grid(row=4, column=4)
+
+f1.grid(row=5, column=0)
+f2.grid(row=5, column=1)
+f3.grid(row=5, column=2)
+f4.grid(row=5, column=3)
+f5.grid(row=5, column=4)
+
+
+
+a=Button(root, text="A", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(a))
+b=Button(root, text="B", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(b))
+c=Button(root, text="C", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(c))
+d=Button(root, text="D", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(d))
+e=Button(root, text="E", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(e))
+f=Button(root, text="F", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(f))
+g=Button(root, text="G", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(g))
+h=Button(root, text="H", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(h))
+i=Button(root, text="I", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(i))
+j=Button(root, text="J", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(j))
+k=Button(root, text="K", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(k))
+l=Button(root, text="L", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(l))
+m=Button(root, text="M", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(m))
+n=Button(root, text="N", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(n))
+o=Button(root, text="O", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(o))
+p=Button(root, text="P", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(p))
+q=Button(root, text="Q", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(q))
+r=Button(root, text="R", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(r))
+s=Button(root, text="S", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(s))
+t=Button(root, text="T", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(t))
+u=Button(root, text="U", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(u))
+v=Button(root, text="V", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(v))
+w=Button(root, text="W", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(w))
+x=Button(root, text="X", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(x))
+y=Button(root, text="Y", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(y))
+z=Button(root, text="Z", font=("helvtica", 20), height=1, width=3, bg="SystemButtonFace", command=lambda: a_click(z))
+
+a.grid(row=2, column=6)
+b.grid(row=3, column=10)
+c.grid(row=3, column=8)
+d.grid(row=2, column=8)
+e.grid(row=1, column=8)
+f.grid(row=2, column=9)
+g.grid(row=2, column=10)
+h.grid(row=2, column=11)
+i.grid(row=1, column=13)
+j.grid(row=2, column=12)
+k.grid(row=2, column=13)
+l.grid(row=2, column=14)
+m.grid(row=3, column=11)
+n.grid(row=3, column=12)
+o.grid(row=1, column=14)
+p.grid(row=1, column=15)
+q.grid(row=1, column=6)
+r.grid(row=1, column=9)
+s.grid(row=2, column=7)
+t.grid(row=1, column=10)
+u.grid(row=1, column=12)
+v.grid(row=3, column=9)
+w.grid(row=1, column=7)
+x.grid(row=3, column=7)
+y.grid(row=1, column=11)
+z.grid(row=3, column=6)
+
+root.mainloop()
